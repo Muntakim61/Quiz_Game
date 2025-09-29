@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="screen active" id="start-screen">
+        <h1 class="header">Quiz Time!</h1>
+        <p>Test your knowledge with these fun questions</p>
+        <button id="start-btn" class="btn">Start Quiz</button>
+      </div>
+      <div class="screen inactive" id="quiz-screen">
+        <p class="question-container">Question</p>
+        <div class="quiz-info">
+          <p class="question-number">Question <span id="current-question-index">0</span> out of <span id="total-questions">5</span></p>
+          <p class="score"> Score : <span id="score">0</span></p>
+        </div>
+        <div class="answers-container">
+          <!-- Answers will dynamically appear here as buttons -->
+           <button class="answer-btn">Answer-1</button>
+        </div>
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+      <div class="screen inactive" id="result-screen">
+        <div class="header">Quiz Results</div>
+        <div class="result-info">
+            <p>You score <span id="results-score">5</span> out of <span>5</span></p>
+            <p id="results-comment">Congrats, you made it!!</p>
+        </div>
+        <btn class="btn" id="restart-btn">Restart Quiz</btn>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
